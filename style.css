@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+body * {
+	font-family: "Inter", sans-serif !important;
+	line-height: 1.35;
+}
+
+header.stAppHeader {
+	background-color: transparent;
+}
+
+section.stMain .block-container {
+	padding-top: 2rem;
+	z-index: 1;
+}
+
+[data-testid="stDecoration"] {
+	background: #ffffff;
+}
+
+.section-title {
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	color: #666666; /* mid grey */
+	letter-spacing: 0.08em;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	margin-top: 1.5rem;
+	letter-spacing: 0.03em;
+}
