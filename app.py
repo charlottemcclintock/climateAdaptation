@@ -54,6 +54,30 @@ with open("style.css") as css:
     custom_css = css.read()
 st.markdown(f"<style>{custom_css}</style>", unsafe_allow_html=True)
 
+# Add this new CSS for table styling
+st.markdown("""
+    <style>
+        .stDataFrame {
+            font-size: 0.8em;
+        }
+        .stDataFrame td {
+            padding: 0.5em;
+        }
+        .stDataFrame th {
+            padding: 0.5em;
+        }
+        /* Set column widths */
+        .stDataFrame td:nth-child(1) {  /* Sector column */
+            width: 20%;
+        }
+        .stDataFrame td:nth-child(2) {  /* Subsector column */
+            width: 30%;
+        }
+        .stDataFrame td:nth-child(3) {  /* Priority column */
+            width: 50%;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # markdown -> html to apply custom css
 def apply_custom_css(css):

@@ -3,6 +3,7 @@
 body * {
 	font-family: "Inter", sans-serif !important;
 	line-height: 1.35;
+	font-size: 14px;
 }
 
 header.stAppHeader {
@@ -27,4 +28,35 @@ section.stMain .block-container {
 	margin-bottom: 0.5rem;
 	margin-top: 1.5rem;
 	letter-spacing: 0.03em;
+}
+
+/* Table styling */
+.stTable {
+	font-size: 0.8em;
+}
+
+.stTable td {
+	padding: 0.5em;
+	vertical-align: top;
+}
+
+.stTable th {
+	padding: 0.5em;
+	vertical-align: top;
+}
+
+/* Set column widths */
+.stTable td:nth-child(1) {
+	/* Sector column */
+	width: 20%;
+}
+
+.stTable td:nth-child(2) {
+	/* Subsector column */
+	width: 30%;
+}
+
+.stTable td:nth-child(3) {
+	/* Priority column */
+	width: 50%;
 }
